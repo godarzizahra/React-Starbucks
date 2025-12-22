@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root {
+	--back-color: #ececec;
+	--cart-color: #1e3932;
+	--bt-color: #e9c9a2;
+}
+
+body {
+	background-color: var(--back-color);
+}
