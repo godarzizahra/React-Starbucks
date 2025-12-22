@@ -26,13 +26,13 @@ export function Productcard({
 			<div className="flex flex-row-reverse items-center text-center">
 				<Button
 					className=""
-					childern="+"
+					childeren="+"
 					onclick={() => plusProduct(product.id)}
 				/>
 				<span className="bg-[#fefeff] w-8 p-1">{product.quantity}</span>
 				<Button
 					className=""
-					childern="-"
+					childeren="-"
 					onclick={() => minusProduct(product.id)}
 				/>
 			</div>

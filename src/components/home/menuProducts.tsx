@@ -9,6 +9,12 @@ export type Props = {
 };
 
 export function Menuproducts({ products, plusProduct, minusProduct }: Props) {
+	const selectedProducts = products.filter((product) => product.quantity > 0);
+
+	const totalPrice = selectedProducts.reduce(
+		(sum, product) => sum + product.price * product.quantity,
+		0
+	);
 	return (
 		<div className="flex flex-col text-center w-full max-w-[92%] md:max-w-[85%] lg:max-w-[80%] mx-auto gap-6 md:gap-8">
 			<h2 className="font-bold text-lg sm:text-2xl md:text-3xl text-[#1e3932]">
@@ -36,8 +42,8 @@ export function Menuproducts({ products, plusProduct, minusProduct }: Props) {
 				))}
 			</div>
 
-			<span className="font-bold text-lg sm:text-2xl md:text-4xl text-[#1e3932]">
-				Total: $
+			<span className=" text-lg sm:text-2xl md:text-4xl text-[#1e3932]">
+				Total: ${totalPrice}
 			</span>
 
 			<button className="bg-[#e9c9a2] text-[#fefeff] text-lg sm:text-xl md:text-2xl w-full py-3 md:py-4 rounded-2xl">

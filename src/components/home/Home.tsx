@@ -17,7 +17,7 @@ export function Home() {
 	const plusProduct = (id: number) => {
 		setProducts((prev) =>
 			prev.map((item) =>
-				item.id === id ? { ...item, count: item.quantity + 1 } : item
+				item.id === id ? { ...item, quantity: item.quantity + 1 } : item
 			)
 		);
 	};
@@ -26,7 +26,7 @@ export function Home() {
 		setProducts((prev) =>
 			prev.map((item) =>
 				item.id === id && item.quantity > 0
-					? { ...item, count: item.quantity - 1 }
+					? { ...item, quantity: item.quantity - 1 }
 					: item
 			)
 		);

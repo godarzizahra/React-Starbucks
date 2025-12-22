@@ -1,12 +1,12 @@
 type buttonType = {
-	childern: React.ReactNode;
+	childeren: React.ReactNode;
 	className?: string;
 	onclick?: () => void;
 };
 
 export default function Button({
 	onclick,
-	childern,
+	childeren,
 	className,
 	...rest
 }: buttonType) {
@@ -17,7 +17,7 @@ export default function Button({
 				{...rest}
 				onClick={onclick}
 			>
-				{childern}
+				{childeren}
 			</button>
 		</div>
 	);

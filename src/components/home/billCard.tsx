@@ -12,7 +12,7 @@ export function Billcard(product: CardItem) {
 			<div className="flex flex-col self-start text-left pl-4">
 				<span className="text-[#fefeff] font-bold">{product.product.name}</span>
 				<span className="text-[#e9c9a2] font-bold text-xl">
-					${product.product.price}
+					${product.product.price * product.product.quantity}
 				</span>
 				<span className="text-[#fefeff] font-bold">
 					Qty : {product.product.quantity}
