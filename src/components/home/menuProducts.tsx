@@ -46,4 +46,3 @@ export function Menuproducts({ products, plusProduct, minusProduct }: Props) {
 		</div>
 	);
 }
-J;
