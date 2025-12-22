@@ -31,6 +31,11 @@ export function Home() {
 			)
 		);
 	};
+
+	const resetProducts = () => {
+		setProducts((prev) => prev.map((item) => ({ ...item, quantity: 0 })));
+	};
+
 	return (
 		<div>
 			<Header />
@@ -38,6 +43,7 @@ export function Home() {
 				products={products}
 				plusProduct={plusProduct}
 				minusProduct={minusProduct}
+				resetProducts={resetProducts}
 			/>
 		</div>
 	);
