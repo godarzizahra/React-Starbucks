@@ -13,7 +13,7 @@ export default function Button({
 	return (
 		<div>
 			<button
-				className={`   bg-[#e9c9a2] w-7 p-1 ${className ?? ""}`}
+				className={`   bg-[#e9c9a2] w-10 p-1 ${className ?? ""}`}
 				{...rest}
 				onClick={onclick}
 			>

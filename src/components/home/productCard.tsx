@@ -14,11 +14,11 @@ export function Productcard({
 	return (
 		<div
 			key={product.id}
-			className="bg-[#1e3932] w-50 h-90 rounded-3xl flex flex-col items-center justify-center-safe gap-2"
+			className="bg-[#1e3932] w-full h-full rounded-3xl flex flex-col items-center justify-center-safe gap-2 py-5"
 		>
-			<img src={product.img} alt={product.name} />
-			<div className="flex flex-col self-start text-left pl-4">
-				<span className="text-[#fefeff] font-bold">{product.name}</span>
+			<img className="w-11/12" src={product.img} alt={product.name} />
+			<div className="flex flex-col self-start text-left pl-4 gap-2">
+				<span className="text-[#fefeff] font-bold text-xl">{product.name}</span>
 				<span className="text-[#e9c9a2] font-bold text-xl">
 					${product.price}
 				</span>
@@ -29,7 +29,7 @@ export function Productcard({
 					childeren="+"
 					onclick={() => plusProduct(product.id)}
 				/>
-				<span className="bg-[#fefeff] w-8 p-1">{product.quantity}</span>
+				<span className="bg-[#fefeff] w-10 p-1">{product.quantity}</span>
 				<Button
 					className=""
 					childeren="-"

@@ -31,8 +31,8 @@ export function Menuproducts({
 	};
 
 	return (
-		<div className="flex flex-col text-center w-full max-w-[92%] md:max-w-[85%] lg:max-w-[80%] mx-auto gap-6 md:gap-8">
-			<h2 className="font-bold text-lg sm:text-2xl md:text-3xl text-[#1e3932]">
+		<div className="flex flex-col text-center w-full max-w-[92%] md:max-w-[85%] lg:max-w-[80%] mx-auto gap-6 md:gap-8 pb-2">
+			<h2 className="font-bold text-2xl sm:text-3xl md:text-3xl text-[#1e3932]">
 				Starbucks Online Coffee Order
 			</h2>
 
@@ -47,7 +47,7 @@ export function Menuproducts({
 				))}
 			</div>
 
-			<h2 className="font-bold text-lg sm:text-2xl md:text-3xl text-[#1e3932]">
+			<h2 className="font-bold text-2xl sm:text-3xl md:text-3xl text-[#1e3932]">
 				Bill
 			</h2>
 
